@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/fc9/access" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/fc9/api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/fc9/auth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/fc9/blueprint" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/fc9/lang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/fc9/net" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/fc9/queue" vcs="Git" />
+  </component>
+</project>

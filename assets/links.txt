@@ -1,0 +1,32 @@
+Laravel
+
+API
+---
+
+Início » APIs RESTful no Laravel 6 com autenticação de passaporte
+APIs RESTful no Laravel 6 com autenticação do Passport
+https://programmingfields.com/laravel-6-rest-api-with-passport-auth/
+
+Uma API REST moderna no Laravel 5 Parte 3: Tratamento de erros
+http://esbenp.github.io/2017/01/14/modern-rest-api-laravel-part-3/
+
+Package Dingo:
+https://github.com/dingo/api/wiki/Responses
+
+https://medium.com/@lucasmacedo/boas-pr%C3%A1ticas-em-apis-com-laravel-part-3-status-codes-errors-and-messages-3bab56695cb9
+
+Erros e exceções da API do Laravel
+https://laraveldaily.com/laravel-api-errors-and-exceptions-how-to-return-responses/
+
+RECAPTCHAR
+----------
+
+Laravel 7.x, 6 Validação do formulário do Google ReCaptcha v2
+https://www.tutsmake.com/laravel-6-google-v2-recaptcha-form-validation-example/
+https://laravel.tutsmake.com/captcha-form
+
+Laravel 6 Tutorial de exemplo de validação de formulário do Google v2 ReCAPTCHA
+https://w3path.com/laravel-6-google-v2-recaptcha-form-validation-example-tutorial/
+
+Performance
+https://geekflare.com/laravel-optimization/

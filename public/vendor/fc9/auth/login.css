@@ -1,0 +1,15 @@
+.success-feedback {
+    color: #55ce63;
+}
+
+.invalid-feedback {
+    color: #f62d51;
+}
+
+.small, small {
+    ffont-size: 80%;
+    font-weight: 400;
+    outline: none;
+    box-sizing: border-box;
+    margin: .1rem .3740834954rem
+}

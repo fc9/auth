@@ -1,0 +1,82 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.5",
+        "fideloper/proxy": "^4.2",
+        "fruitcake/laravel-cors": "^1.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "intervention/image": "^2.5",
+        "laravel/framework": "^7.0",
+        "laravel/passport": "^8.4",
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "^2.0",
+        "waavi/sanitizer": "^1.0",
+        "your-app-rocks/eloquent-uuid": "^2.0",
+        "fc9/api": "^1.0.5"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.0",
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Fc9\\Lang\\": "packages/fc9/lang/src",
+            "Fc9\\Queue\\": "packages/fc9/queue/src",
+            "Fc9\\Auth\\": "packages/fc9/auth/src",
+            "Fc9\\Access\\": "packages/fc9/access/src",
+            "Fc9\\Net\\": "packages/fc9/net/src"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "files": [
+            "app/Helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "Fc9\\Lang\\Tests\\": "packages/fc9/lang/tests",
+            "Fc9\\Queue\\Tests\\": "packages/fc9/queue/tests",
+            "Fc9\\Auth\\Tests\\": "packages/fc9/auth/tests",
+            "Fc9\\Access\\Tests\\": "packages/fc9/access/tests",
+            "Fc9\\Net\\Tests\\": "packages/fc9/net/tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}
