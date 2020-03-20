@@ -31,13 +31,6 @@ function improve(array $array)
     ));
 }
 
-//function rulesCallback($carry, $value)
-//{
-//    $value = explode(':', $value);
-//    $carry[$value[0]] = isset($value[1]) ? $value[1] : true;
-//    return $carry;
-//}
-
 function rules($rules)
 {
     return improve(array_reduce(explode('|', $rules), function ($carry, $value) {
@@ -45,4 +38,20 @@ function rules($rules)
         $carry[$value[0]] = isset($value[1]) ? $value[1] : true;
         return $carry;
     }, []));
+}
+
+function array_supermerge(array $array1, array $array2)
+{
+    foreach ($array2 as $key => $value) {
+        if (isset($array1[$key]) && is_array($array1[$key])) {
+            if (is_array($value)) {
+                $array1[$key] = $value === [] ? $array1[$key] : array_supermerge($array1[$key], $value);
+            } else {
+                $array1[$key] = $value;
+            }
+        } else {
+            $array1[$key] = $value;
+        }
+    }
+    return $array1;
 }
