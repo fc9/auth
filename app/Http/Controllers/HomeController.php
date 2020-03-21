@@ -28,7 +28,7 @@ class HomeController extends Controller
 
     public function fallback()
     {
-        dd('fdfd');
+        dd('fallback');
         return response()->json(['message' => 'Page Not Found. If error persists, contact info@morenwm.com'], 404);
     }
 }

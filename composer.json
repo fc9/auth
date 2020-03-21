@@ -1,10 +1,12 @@
 {
-    "name": "laravel/laravel",
+    "name": "fc9/auth",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "App that allows authenticate users.",
     "keywords": [
-        "framework",
-        "laravel"
+        "laravel",
+        "auth",
+        "authenticate",
+        "fc9"
     ],
     "license": "MIT",
     "require": {
@@ -19,7 +21,11 @@
         "laravel/ui": "^2.0",
         "waavi/sanitizer": "^1.0",
         "your-app-rocks/eloquent-uuid": "^2.0",
-        "fc9/api": "^1.0.5"
+        "menarasolutions/geographer-laravel": "~0.2.1",
+        "fc9/api": "^1.2",
+        "fc9/lang": "^5.2",
+        "fc9/queue": "^1.1",
+        "fc9/net": "^1.6"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -40,12 +46,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Fc9\\Lang\\": "packages/fc9/lang/src",
-            "Fc9\\Queue\\": "packages/fc9/queue/src",
-            "Fc9\\Auth\\": "packages/fc9/auth/src",
-            "Fc9\\Access\\": "packages/fc9/access/src",
-            "Fc9\\Net\\": "packages/fc9/net/src"
+            "App\\": "app/"
         },
         "classmap": [
             "database/seeds",
@@ -57,12 +58,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/",
-            "Fc9\\Lang\\Tests\\": "packages/fc9/lang/tests",
-            "Fc9\\Queue\\Tests\\": "packages/fc9/queue/tests",
-            "Fc9\\Auth\\Tests\\": "packages/fc9/auth/tests",
-            "Fc9\\Access\\Tests\\": "packages/fc9/access/tests",
-            "Fc9\\Net\\Tests\\": "packages/fc9/net/tests"
+            "Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "411e75c35db13728c727c764a3216555",
+    "content-hash": "1d0a9bfc14cec3b6f12fea89e0331c8f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -465,20 +465,20 @@
         },
         {
             "name": "fc9/api",
-            "version": "1.0.7",
+            "version": "1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fc9/laravel-api.git",
-                "reference": "ed9259b9dbe09b5a372c9f4e8c76068027e594be"
+                "url": "https://github.com/fc9/base-api.git",
+                "reference": "1555a46a3a105b3778c8a1837c1e8f503947716e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fc9/laravel-api/zipball/ed9259b9dbe09b5a372c9f4e8c76068027e594be",
-                "reference": "ed9259b9dbe09b5a372c9f4e8c76068027e594be",
+                "url": "https://api.github.com/repos/fc9/base-api/zipball/1555a46a3a105b3778c8a1837c1e8f503947716e",
+                "reference": "1555a46a3a105b3778c8a1837c1e8f503947716e",
                 "shasum": ""
             },
             "require": {
-                "fc9/blueprint": "~4.0.0",
+                "fc9/blueprint": "^4.1",
                 "illuminate/routing": "~7.1",
                 "illuminate/support": "~7.1",
                 "league/fractal": "~0.17",
@@ -544,26 +544,26 @@
                 "laravel",
                 "restful"
             ],
-            "time": "2020-03-12T01:08:16+00:00"
+            "time": "2020-03-21T21:03:26+00:00"
         },
         {
             "name": "fc9/blueprint",
-            "version": "v4.0.0",
+            "version": "v4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fc9/laravel-blueprint.git",
-                "reference": "3fdf7da43377a80c371a85a2864f8417580848f6"
+                "url": "https://github.com/fc9/base-blueprint.git",
+                "reference": "055ffbd41255abb65c3a3136413b520678216006"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fc9/laravel-blueprint/zipball/3fdf7da43377a80c371a85a2864f8417580848f6",
-                "reference": "3fdf7da43377a80c371a85a2864f8417580848f6",
+                "url": "https://api.github.com/repos/fc9/base-blueprint/zipball/055ffbd41255abb65c3a3136413b520678216006",
+                "reference": "055ffbd41255abb65c3a3136413b520678216006",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "~1.8.0",
                 "illuminate/filesystem": "~7.1",
-                "illuminate/support": "~7.0",
+                "illuminate/support": "~7.1",
                 "php": "~7.2.5",
                 "phpdocumentor/reflection-docblock": "~5.1.0"
             },
@@ -601,7 +601,186 @@
                 "fc9",
                 "laravel"
             ],
-            "time": "2020-03-11T19:52:09+00:00"
+            "time": "2020-03-21T20:49:43+00:00"
+        },
+        {
+            "name": "fc9/lang",
+            "version": "5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fc9/base-lang.git",
+                "reference": "b41a50502005bc258d004969e87f5ed87ff0fe70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fc9/base-lang/zipball/b41a50502005bc258d004969e87f5ed87ff0fe70",
+                "reference": "b41a50502005bc258d004969e87f5ed87ff0fe70",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~7.1",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fc9\\Lang\\Providers\\LangServiceProvider"
+                    ],
+                    "aliases": {
+                        "Lang9": "Fc9\\Lang\\LangFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fc9\\Lang\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabio Cabral",
+                    "email": "fabiocabralsantos@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Making it easier to add support the multiple languages.",
+            "homepage": "https://github.com/fc9/base-lang",
+            "keywords": [
+                "fc9",
+                "lang"
+            ],
+            "time": "2020-03-21T21:20:25+00:00"
+        },
+        {
+            "name": "fc9/net",
+            "version": "1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fc9/base-net.git",
+                "reference": "0ceba3ed4857ee2c7a5b0fa03ceab4077e67bdae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fc9/base-net/zipball/0ceba3ed4857ee2c7a5b0fa03ceab4077e67bdae",
+                "reference": "0ceba3ed4857ee2c7a5b0fa03ceab4077e67bdae",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~7.1",
+                "menarasolutions/geographer-laravel": "^0.2.1",
+                "php": "^7.2",
+                "waavi/sanitizer": "^1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fc9\\Net\\Providers\\NetServiceProvider"
+                    ],
+                    "aliases": {
+                        "Queue": "Fc9\\Net\\Facades\\Network"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fc9\\Net\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabio Cabral",
+                    "email": "fabiocabralsantos@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Making it easier to add support the multilevel network.",
+            "homepage": "https://github.com/fc9/base-network",
+            "keywords": [
+                "fc9",
+                "multilevel",
+                "multinível",
+                "network"
+            ],
+            "time": "2020-03-21T21:40:30+00:00"
+        },
+        {
+            "name": "fc9/queue",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fc9/base-queue.git",
+                "reference": "334a5e068639b873691eae6df455e47de8604cba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fc9/base-queue/zipball/334a5e068639b873691eae6df455e47de8604cba",
+                "reference": "334a5e068639b873691eae6df455e47de8604cba",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~7.1",
+                "menarasolutions/geographer-laravel": "^0.2.1",
+                "php": "^7.2",
+                "waavi/sanitizer": "^1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fc9\\Queue\\Providers\\QueueServiceProvider"
+                    ],
+                    "aliases": {
+                        "Queue": "Fc9\\Queue\\Facades\\Queue"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fc9\\Queue\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabio Cabral",
+                    "email": "fabiocabralsantos@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Plugin that allows shooting queues and jobs.",
+            "homepage": "https://github.com/fc9/queue",
+            "keywords": [
+                "fc9",
+                "filas",
+                "jobs",
+                "queue"
+            ],
+            "time": "2020-03-21T21:00:08+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -1256,16 +1435,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v7.1.0",
+            "version": "v7.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "59b97d2868ff42d11626e63c6773b41146b3eb9c"
+                "reference": "de01e2926a7560c43fb763d86de134a52b46928b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/59b97d2868ff42d11626e63c6773b41146b3eb9c",
-                "reference": "59b97d2868ff42d11626e63c6773b41146b3eb9c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/de01e2926a7560c43fb763d86de134a52b46928b",
+                "reference": "de01e2926a7560c43fb763d86de134a52b46928b",
                 "shasum": ""
             },
             "require": {
@@ -1353,7 +1532,7 @@
                 "ext-memcached": "Required to use the memcache cache driver.",
                 "ext-pcntl": "Required to use all features of the queue worker.",
                 "ext-posix": "Required to use all features of the queue worker.",
-                "ext-redis": "Required to use the Redis cache and queue drivers.",
+                "ext-redis": "Required to use the Redis cache and queue drivers (^4.0|^5.0).",
                 "filp/whoops": "Required for friendly error pages in development (^2.4).",
                 "fzaninotto/faker": "Required to use the eloquent factory builder (^1.9.1).",
                 "guzzlehttp/guzzle": "Required to use the HTTP Client, Mailgun mail driver and the ping methods on schedules (^6.3.1|^7.0).",
@@ -1403,7 +1582,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-03-10T14:07:01+00:00"
+            "time": "2020-03-20T18:11:43+00:00"
         },
         {
             "name": "laravel/passport",
@@ -1480,24 +1659,24 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "37579c93271ec30ef099dd633ec7c2de5e5fb112"
+                "reference": "5271893ec90ad9f8d3e34792ac6b72cad3b84cc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/37579c93271ec30ef099dd633ec7c2de5e5fb112",
-                "reference": "37579c93271ec30ef099dd633ec7c2de5e5fb112",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/5271893ec90ad9f8d3e34792ac6b72cad3b84cc2",
+                "reference": "5271893ec90ad9f8d3e34792ac6b72cad3b84cc2",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^6.0|^7.0",
-                "illuminate/contracts": "^6.0|^7.0",
-                "illuminate/support": "^6.0|^7.0",
+                "illuminate/console": "^6.0|^7.0|^8.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
                 "php": "^7.2",
-                "psy/psysh": "^0.9",
+                "psy/psysh": "^0.9|^0.10",
                 "symfony/var-dumper": "^4.0|^5.0"
             },
             "require-dev": {
@@ -1505,7 +1684,7 @@
                 "phpunit/phpunit": "^8.0|^9.0"
             },
             "suggest": {
-                "illuminate/database": "The Illuminate Database package (^6.0|^7.0)."
+                "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0)."
             },
             "type": "library",
             "extra": {
@@ -1540,7 +1719,7 @@
                 "laravel",
                 "psysh"
             ],
-            "time": "2020-02-05T15:00:44+00:00"
+            "time": "2020-03-17T15:34:59+00:00"
         },
         {
             "name": "laravel/ui",
@@ -1778,16 +1957,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.65",
+            "version": "1.0.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "8f17b3ba67097aafb8318cd5c553b1acf7c891c8"
+                "reference": "021569195e15f8209b1c4bebb78bd66aa4f08c21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8f17b3ba67097aafb8318cd5c553b1acf7c891c8",
-                "reference": "8f17b3ba67097aafb8318cd5c553b1acf7c891c8",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/021569195e15f8209b1c4bebb78bd66aa4f08c21",
+                "reference": "021569195e15f8209b1c4bebb78bd66aa4f08c21",
                 "shasum": ""
             },
             "require": {
@@ -1858,7 +2037,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2020-03-08T18:53:20+00:00"
+            "time": "2020-03-17T18:58:12+00:00"
         },
         {
             "name": "league/fractal",
@@ -2000,6 +2179,162 @@
                 "server"
             ],
             "time": "2019-07-13T18:58:26+00:00"
+        },
+        {
+            "name": "menarasolutions/geographer",
+            "version": "v0.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MenaraSolutions/geographer.git",
+                "reference": "d7a6a811e1be6c90efe4a04b3f538f2df71d5820"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MenaraSolutions/geographer/zipball/d7a6a811e1be6c90efe4a04b3f538f2df71d5820",
+                "reference": "d7a6a811e1be6c90efe4a04b3f538f2df71d5820",
+                "shasum": ""
+            },
+            "require": {
+                "menarasolutions/geographer-data": "^0.1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "illuminate/support": "5.*",
+                "menarasolutions/geographer-de": "0.*",
+                "menarasolutions/geographer-nl": "0.*",
+                "menarasolutions/geographer-ru": "0.*",
+                "phpunit/phpunit": "4.*|5.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MenaraSolutions\\Geographer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Mysenko",
+                    "email": "denis@menara.com.au",
+                    "homepage": "https://www.menara.com.au"
+                }
+            ],
+            "description": "A PHP library that knows how any country, state or city is called in any language",
+            "homepage": "https://github.com/MenaraSolutions/geographer",
+            "keywords": [
+                "geo",
+                "geolocation",
+                "geonames",
+                "localization"
+            ],
+            "time": "2018-12-11T04:39:20+00:00"
+        },
+        {
+            "name": "menarasolutions/geographer-data",
+            "version": "v0.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MenaraSolutions/geographer-data.git",
+                "reference": "81df3cdedf72cbc49e897c04e8e2efa6f2495d6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MenaraSolutions/geographer-data/zipball/81df3cdedf72cbc49e897c04e8e2efa6f2495d6c",
+                "reference": "81df3cdedf72cbc49e897c04e8e2efa6f2495d6c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MenaraSolutions\\Geographer\\Helpers\\": "helpers/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Mysenko",
+                    "email": "denis@menara.com.au",
+                    "homepage": "https://www.menara.com.au"
+                }
+            ],
+            "description": "Basic data package for Geographer - countries and their subdivisions",
+            "homepage": "https://github.com/MenaraSolutions/geographer-data",
+            "keywords": [
+                "geographer",
+                "geolocation",
+                "localization"
+            ],
+            "time": "2019-03-11T05:08:57+00:00"
+        },
+        {
+            "name": "menarasolutions/geographer-laravel",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MenaraSolutions/geographer-laravel.git",
+                "reference": "6eeb5fadd0509384f95f00803ed90e3a267c759c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MenaraSolutions/geographer-laravel/zipball/6eeb5fadd0509384f95f00803ed90e3a267c759c",
+                "reference": "6eeb5fadd0509384f95f00803ed90e3a267c759c",
+                "shasum": ""
+            },
+            "require": {
+                "menarasolutions/geographer": "^0.3.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "illuminate/support": "5.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MenaraSolutions\\Geographer\\Integrations\\LaravelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Geographer": "MenaraSolutions\\Geographer\\Integrations\\LaravelFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MenaraSolutions\\Geographer\\Integrations\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Mysenko",
+                    "email": "denis@menara.com.au",
+                    "homepage": "https://www.menara.com.au"
+                }
+            ],
+            "description": "Geographer integration classes for Laravel and Lumen",
+            "homepage": "https://github.com/MenaraSolutions/geographer-laravel",
+            "keywords": [
+                "geographer",
+                "geolocation",
+                "laravel",
+                "localization"
+            ],
+            "time": "2018-07-23T11:51:54+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2575,20 +2910,20 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959"
+                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959",
-                "reference": "77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
+                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9 || ^7.0"
+                "php": "^5.5.9 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.3",
@@ -2626,7 +2961,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-12-15T19:35:24+00:00"
+            "time": "2020-03-21T18:07:53+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -3014,32 +3349,31 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.9.12",
+            "version": "v0.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "90da7f37568aee36b116a030c5f99c915267edd4"
+                "reference": "573c2362c3cdebe846b4adae4b630eecb350afd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/90da7f37568aee36b116a030c5f99c915267edd4",
-                "reference": "90da7f37568aee36b116a030c5f99c915267edd4",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/573c2362c3cdebe846b4adae4b630eecb350afd8",
+                "reference": "573c2362c3cdebe846b4adae4b630eecb350afd8",
                 "shasum": ""
             },
             "require": {
                 "dnoegel/php-xdg-base-dir": "0.1.*",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
-                "jakub-onderka/php-console-highlighter": "0.3.*|0.4.*",
-                "nikic/php-parser": "~1.3|~2.0|~3.0|~4.0",
-                "php": ">=5.4.0",
-                "symfony/console": "~2.3.10|^2.4.2|~3.0|~4.0|~5.0",
-                "symfony/var-dumper": "~2.7|~3.0|~4.0|~5.0"
+                "jakub-onderka/php-console-highlighter": "0.4.*|0.3.*",
+                "nikic/php-parser": "~4.0|~3.0|~2.0|~1.3",
+                "php": "^8.0 || ^7.0 || ^5.5.9",
+                "symfony/console": "~5.0|~4.0|~3.0|^2.4.2|~2.3.10",
+                "symfony/var-dumper": "~5.0|~4.0|~3.0|~2.7"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.2",
-                "hoa/console": "~2.15|~3.16",
-                "phpunit/phpunit": "~4.8.35|~5.0|~6.0|~7.0"
+                "hoa/console": "~3.16|~2.15"
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
@@ -3054,7 +3388,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.9.x-dev"
+                    "dev-master": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -3084,7 +3418,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2019-12-06T14:19:43+00:00"
+            "time": "2020-03-21T06:55:27+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -4707,16 +5041,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "32bd5ca5a4170f88e27073353013d210a3354ae9"
+                "reference": "939dfda2d7267ac8fc53ac3d642b5de357554c39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/32bd5ca5a4170f88e27073353013d210a3354ae9",
-                "reference": "32bd5ca5a4170f88e27073353013d210a3354ae9",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/939dfda2d7267ac8fc53ac3d642b5de357554c39",
+                "reference": "939dfda2d7267ac8fc53ac3d642b5de357554c39",
                 "shasum": ""
             },
             "require": {
@@ -4765,20 +5099,20 @@
                 "env",
                 "environment"
             ],
-            "time": "2020-03-01T23:56:01+00:00"
+            "time": "2020-03-12T13:44:15+00:00"
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.4.9",
+            "version": "1.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "9fd2b224c71448b5f84aef9d499a1428d79776a2"
+                "reference": "240e93829a5f985fab0984a6e55ae5e26b78a334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/9fd2b224c71448b5f84aef9d499a1428d79776a2",
-                "reference": "9fd2b224c71448b5f84aef9d499a1428d79776a2",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/240e93829a5f985fab0984a6e55ae5e26b78a334",
+                "reference": "240e93829a5f985fab0984a6e55ae5e26b78a334",
                 "shasum": ""
             },
             "require": {
@@ -4814,7 +5148,7 @@
                 "clean",
                 "php"
             ],
-            "time": "2020-03-06T02:47:42+00:00"
+            "time": "2020-03-13T01:23:26+00:00"
         },
         {
             "name": "waavi/sanitizer",
@@ -5087,16 +5421,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "b8dbf7791c81619161270d580a64a30bad41b832"
+                "reference": "67f1677954ad33ca6b77f2c41cf43a58624f27fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/b8dbf7791c81619161270d580a64a30bad41b832",
-                "reference": "b8dbf7791c81619161270d580a64a30bad41b832",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/67f1677954ad33ca6b77f2c41cf43a58624f27fc",
+                "reference": "67f1677954ad33ca6b77f2c41cf43a58624f27fc",
                 "shasum": ""
             },
             "require": {
@@ -5118,7 +5452,7 @@
                 "orchestra/testbench": "5.0"
             },
             "suggest": {
-                "laravel/telescope": "^2.0"
+                "laravel/telescope": "^3.1"
             },
             "type": "library",
             "extra": {
@@ -5154,7 +5488,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2020-03-05T12:32:22+00:00"
+            "time": "2020-03-18T19:20:44+00:00"
         },
         {
             "name": "facade/ignition-contracts",

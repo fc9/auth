@@ -169,9 +169,8 @@ return [
         Fc9\Api\Provider\LaravelServiceProvider::class,
         Fc9\Lang\Providers\LangServiceProvider::class,
         Fc9\Queue\Providers\QueueServiceProvider::class,
-        Fc9\Auth\Providers\AuthServiceProvider::class,
-        // Fc9\Access\Providers\AccessServiceProvider::class,
-//        Fc9\Net\Providers\NetServiceProvider::class,
+        //Fc9\Access\Providers\AccessServiceProvider::class,
+        //Fc9\Net\Providers\NetServiceProvider::class,
 
         /*
          * Application Service Providers...

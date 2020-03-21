@@ -3,17 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/net/tests" isTestSource="true" packagePrefix="Fc9\Net\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/auth/tests" isTestSource="true" packagePrefix="Fc9\Auth\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/lang/tests" isTestSource="true" packagePrefix="Fc9\Lang\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/lang/src" isTestSource="false" packagePrefix="Fc9\Lang\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/auth/src" isTestSource="false" packagePrefix="Fc9\Auth\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/access/src" isTestSource="false" packagePrefix="Fc9\Access\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/queue/tests" isTestSource="true" packagePrefix="Fc9\Queue\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/queue/src" isTestSource="false" packagePrefix="Fc9\Queue\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/access/tests" isTestSource="true" packagePrefix="Fc9\Access\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/packages/fc9/net/src" isTestSource="false" packagePrefix="Fc9\Net\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/asm89/stack-cors" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
@@ -30,6 +20,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/facade/ignition-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fc9/api" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fc9/blueprint" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fc9/lang" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fc9/net" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fc9/queue" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fideloper/proxy" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/filp/whoops" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/firebase/php-jwt" />
@@ -54,6 +47,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/fractal" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/oauth2-server" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/menarasolutions/geographer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/menarasolutions/geographer-data" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/menarasolutions/geographer-laravel" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
