@@ -2,149 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="411ea051-ee60-469e-a898-67b765f17bb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Architect/Architect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Architect/EmbedModeResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Architect/IdsModeResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Architect/ModeResolverInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Architect/SideloadModeResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Architect/Utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Events/RegistrationDone.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Facades/ApiConsumer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Facades/Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UsersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckEmailController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EmailConfirmController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Labs/APIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Labs/LabsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Labs/LoginProxy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Labs/Proxy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PresentationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SignUp/ConfirmEmailController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SignUp/IdentifyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SignUp/SignUpController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AbstractApiFormRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AbstractFormRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CheckEmailRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/EmailConfirmRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/LoginRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/RegisterRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Rules/Qualified.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SignUp/IdentifyRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UsersRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/ConfirmEmailJob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/SendMailConfirmIndicationJob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/SendMailConfirmRegisterJob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/SendMailEmailConfirm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/SendMailPasswordReset.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/SendMailPasswordResetJob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mails/ConfirmEmailMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mails/ConfirmIndicationMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mails/ConfirmRegisterMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mails/EmailConfirmMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mails/PasswordResetMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/AccessToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/AuthCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/EmailConfirm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Membership.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/PasswordReset.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Person.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/PersonalAccessClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/RefreshToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/UserView.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/RegisterRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Repository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/RegisterService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/EloquentBulderTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/policy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2016_06_01_000001_create_auth_code_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2016_06_01_000002_create_access_token_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2016_06_01_000003_create_refresh_token_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2016_06_01_000004_create_client_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2016_06_01_000005_create_personal_access_client_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000001_create_user_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000002_create_password_reset_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000003_create_confirm_email_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000003_create_email_confirm_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000004_create_login_block_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000004_create_person_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000005_create_address_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000006_create_person_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000007_create_address_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000011_create_membership_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000080_create_user_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/MembershipTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/PersonTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/pt-BR/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/en/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/en/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/en/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/en/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/en/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/es-AR/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/es-AR/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/es-AR/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/es/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/es/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/es/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/pt-BR/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/pt-BR/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/pt-BR/form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/pt-BR/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/pt-BR/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/tmp/pt-BR/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/confirm_email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/layouts/adidas.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/layouts/adidas.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/components/language-selector.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/components/logo-icon.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/components/logo.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sign-up/confirm_email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sign-up/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sign-up/inactivity.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sign-up/login-disabled.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sign-up/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/auth.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/UserWasCreated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/bkp/UsersRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/UsersService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/FilterAccessProfileUserTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/ReturnJsonTrait.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/es/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/pt-BR/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pt-BR/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AbstractApiFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/bkp/AbstractApiFormRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AbstractFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/bkp/AbstractFormRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CheckEmailRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/bkp/CheckEmailRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/EmailConfirmRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/bkp/EmailConfirmRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/LoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/bkp/LoginRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/RegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/bkp/RegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UsersRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateUserRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/RegisterRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UsersRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/RegisterService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/RegisterService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/request.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_01_000080_create_user_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000080_create_user_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fc9/api/src/Facade/Http.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fc9/api/src/Facade/Http.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../zulper/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../know/site" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -306,12 +182,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Requests/bkp" />
       <recent name="$PROJECT_DIR$/app" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Events" />
+      <recent name="$PROJECT_DIR$/app/Traits" />
+      <recent name="$PROJECT_DIR$/app/Http/Requests" />
+      <recent name="$PROJECT_DIR$/app/Services" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/packages/fc9/auth/src/http/controllers" />
-      <recent name="$PROJECT_DIR$/packages/fc9/auth/src/database/migrations" />
     </key>
   </component>
   <component name="RunManager">
@@ -333,7 +212,7 @@
       <workItem from="1583429062505" duration="17946000" />
       <workItem from="1583497289744" duration="10150000" />
       <workItem from="1584317401304" duration="953000" />
-      <workItem from="1584815336608" duration="12164000" />
+      <workItem from="1584815336608" duration="26752000" />
     </task>
     <servers />
   </component>
@@ -345,10 +224,19 @@
       <screen x="1366" y="0" width="2560" height="1080" />
     </state>
     <state x="2377" y="357" width="594" height="390" key="#com.intellij.fileTypes.FileTypeChooser/1366.0.2560.1080/0.27.1366.741@1366.0.2560.1080" timestamp="1584317461443" />
-    <state x="2462" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584821086569">
+    <state x="1433" y="27" width="664" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584835519124">
       <screen x="1366" y="0" width="2560" height="1080" />
     </state>
-    <state x="2462" y="310" width="424" height="484" key="FileChooserDialogImpl/1366.0.2560.1080/0.27.1366.741@1366.0.2560.1080" timestamp="1584821086569" />
+    <state x="1433" y="27" width="664" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1366.0.2560.1080/0.27.1366.741@1366.0.2560.1080" timestamp="1584835519124" />
+    <state x="2412" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584829362622">
+      <screen x="1366" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2412" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1366.0.2560.1080/0.27.1366.741@1366.0.2560.1080" timestamp="1584829362622" />
+    <state x="910" y="284" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585077555702">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="2462" y="310" width="424" height="484" key="FileChooserDialogImpl/1366.0.2560.1080/0.27.1366.741@1366.0.2560.1080" timestamp="1584832904485" />
+    <state x="910" y="284" width="424" height="484" key="FileChooserDialogImpl/1366.0.2560.1080/67.27.1299.741@1366.0.2560.1080" timestamp="1585077555702" />
     <state width="2447" height="278" key="GridCell.Tab.0.bottom" timestamp="1583447252868">
       <screen x="1366" y="0" width="2560" height="1080" />
     </state>
@@ -365,6 +253,10 @@
       <screen x="1366" y="0" width="2560" height="1080" />
     </state>
     <state width="2447" height="278" key="GridCell.Tab.0.right/1366.0.2560.1080/0.312.1366.768@1366.0.2560.1080" timestamp="1583447252868" />
+    <state x="2466" y="366" width="417" height="373" key="NewPhpClassDialog" timestamp="1584831237924">
+      <screen x="1366" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2466" y="366" width="417" height="373" key="NewPhpClassDialog/1366.0.2560.1080/0.27.1366.741@1366.0.2560.1080" timestamp="1584831237924" />
     <state x="2475" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1583438015024">
       <screen x="1366" y="0" width="2560" height="1080" />
     </state>

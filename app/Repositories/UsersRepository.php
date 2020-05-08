@@ -9,9 +9,9 @@ use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use MenaraSolutions\Geographer\Earth;
 
-class RegisterRepository //extends Repository
+class UsersRepository //extends Repository
 {
-    public static function register(array $data)
+    public static function create(array $data)
     {
         DB::beginTransaction();
 

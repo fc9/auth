@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Repositories\RegisterRepository;
+use App\Repositories\UsersRepository;
 //use App\Repositories\RegisterRepository;
 
 class RegisterService
@@ -12,7 +12,7 @@ class RegisterService
 //        $account = auth()->getCurrentUser();
 //        $account->checkPermission('users.create');
 
-        $user = RegisterRepository::register($data);
+        $user = UsersRepository::register($data);
 
         //$node = $this->networkRepository->create($user);
         //$costumer = $this->bankRepository->create($user);

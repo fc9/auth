@@ -4,13 +4,25 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;
-use App\Http\Requests\UsersRequest;
+use App\Http\Requests\CreateUserRequest;
 use App\Models\User;
 use App\Models\UserView;
+use App\Services\UsersService;
+use App\Traits\ReturnJsonTrait;
+use Fc9\Api\Facade\Http;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
+    use ReturnJsonTrait;
+
+//    private $usersService;
+//
+//    public function __construct(UsersService $service)
+//    {
+//        $this->usersService = $service;
+//    }
+
     /**
      * Display a listing of the resource.
      *
@@ -18,18 +30,22 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return response()->json(['data' => UserView::all()], \Fc9\Api\Facade\Http::status('ok')->code);
+        $data = UsersService::all();
+
+        return response()->json(['data' => $data], $this->statusCode('ok'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param \App\Http\Requests\UsersRequest $request
+     * @param \App\Http\Requests\CreateUserRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function store(UsersRequest $request)
+    public function store(CreateUserRequest $request)
     {
-        return response()->json(['data' => $request->all()]);
+        $data = UsersService::create($request->all());
+
+        return response()->json(['data' => $data], $this->statusCode('create'));
     }
 
 //    /**

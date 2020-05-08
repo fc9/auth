@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Route;
 
 // ------------------------------------------------------------------------- //
 // Home
@@ -12,7 +12,6 @@ Route::get('/home', 'HomeController@index');
 // ------------------------------------------------------------------------- //
 // Register
 // ------------------------------------------------------------------------- //
-
 
 //Route::group(['prefix' => 'auth', 'as' => 'auth'], function () {
 //    Route::get('/', 'AuthController@index');
